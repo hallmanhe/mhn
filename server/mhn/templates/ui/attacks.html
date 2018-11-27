@@ -36,7 +36,7 @@
                         <select name="identifier">
                             <option value="">All</option>
                             {% for s in sensors %}
-                            <option {% if s.uuid == identifier %}selected{% endif %} value="{{ s.uuid }}">{{ s.hostname }}</option>
+                            <option {% if s.uuid == identifier %}selected{% endif %} value="{{ s.uuid }}">{{ s.name }}</option>
                             {% endfor %}
                         </select>
                     </div>
